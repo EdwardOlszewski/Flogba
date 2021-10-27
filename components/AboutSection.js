@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Box from '@mui/material/Box'
 import { makeStyles, Grid, Container, Typography } from '@material-ui/core'
 import Image from 'next/image'
@@ -44,6 +45,9 @@ const AboutSection = () => {
 
   return (
     <Box className={classes.root}>
+      <Head>
+        <title>About Section</title>
+      </Head>
       <Grid container spacing={0}>
         <Grid item sm={12} md={6} lg={4}>
           <Container className={classes.container}>

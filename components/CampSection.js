@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Box from '@mui/material/Box'
 import { makeStyles, Grid, Typography, Button } from '@material-ui/core'
 
@@ -66,11 +67,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const AboutSection = () => {
+const CampSection = () => {
   const classes = useStyles()
 
   return (
     <Box className='campSectionDiv'>
+      <Head>
+        <title>Camp Section</title>
+      </Head>
+
       <Typography variant='h1' className={classes.campTitle}>
         Training Camps
       </Typography>
@@ -126,4 +131,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default CampSection

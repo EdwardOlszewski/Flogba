@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box'
+import Head from 'next/head'
 import {
   makeStyles,
   Typography,
@@ -39,11 +40,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const AboutSection = () => {
+const PricingSection = () => {
   const classes = useStyles()
 
   return (
     <Box className={classes.root}>
+      <Head>
+        <title>Pricing Section</title>
+      </Head>
+
       <Box className={classes.title}>
         <Typography variant='h1' className={classes.text}>
           Pricing & Specials
@@ -124,4 +129,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default PricingSection

@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function BottomAppBar() {
+const Footer = () => {
   const classes = useStyles()
   const currentYear = new Date()
 
@@ -76,10 +76,10 @@ export default function BottomAppBar() {
       <Grid container spacing={2} className={classes.mainGrid}>
         <Grid item md={6} className={classes.gridItem}>
           <Typography variant='h3'>Connect with us</Typography>
-          <Typography variant='subtitle'>
+          <Typography variant='subtitle1'>
             Reach us at academy.SMM@gmail.com or call <br />
           </Typography>
-          <Typography variant='subtitle'>
+          <Typography variant='subtitle1'>
             us at (708) 599-4701 during our avliable hours
           </Typography>
         </Grid>
@@ -117,3 +117,5 @@ export default function BottomAppBar() {
     </AppBar>
   )
 }
+
+export default Footer

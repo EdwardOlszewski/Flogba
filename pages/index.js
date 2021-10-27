@@ -4,7 +4,6 @@ import MapSection from '../components/MapSection'
 import PricingSection from '../components/PricingSection'
 import CampSection from '../components/CampSection'
 import { makeStyles } from '@material-ui/core'
-import Navbar from '../components/Navbar'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +16,10 @@ export default function Home() {
 
   return (
     <div id='home' className={classes.root}>
+      <Head>
+        <title>FLOGBA</title>
+      </Head>
+
       <div id='about' />
       <AboutSection />
 

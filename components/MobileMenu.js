@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
-import clsx from 'clsx'
-import { makeStyles, Hidden, IconButton, Divider } from '@material-ui/core'
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemIcon from '@material-ui/core/ListItemIcon'
-import ListItemText from '@material-ui/core/ListItemText'
 import Link from 'next/link'
+import clsx from 'clsx'
+import {
+  makeStyles,
+  Hidden,
+  IconButton,
+  Divider,
+  SwipeableDrawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from '@material-ui/core'
 
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
@@ -18,8 +23,6 @@ import HomeIcon from '@mui/icons-material/Home'
 import ScheduleIcon from '@mui/icons-material/Schedule'
 import LocalOfferIcon from '@mui/icons-material/LocalOffer'
 import SportsBaseballIcon from '@mui/icons-material/SportsBaseball'
-
-import DescriptionIcon from '@mui/icons-material/Description'
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -39,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function SwipeableTemporaryDrawer() {
+const MobileMenu = () => {
   const classes = useStyles()
   const [state, setState] = useState(false)
 
@@ -163,3 +166,5 @@ export default function SwipeableTemporaryDrawer() {
     </Hidden>
   )
 }
+
+export default MobileMenu

@@ -1,5 +1,6 @@
+import Head from 'next/head'
 import Box from '@mui/material/Box'
-import { makeStyles, Grid, Container, Typography } from '@material-ui/core'
+import { makeStyles, Grid, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,11 +53,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const AboutSection = () => {
+const MapSection = () => {
   const classes = useStyles()
 
   return (
     <Box className={classes.root}>
+      <Head>
+        <title>Map Section</title>
+      </Head>
+
       <Grid container spacing={0}>
         <Grid item xs={12} md={5}>
           <iframe
@@ -92,4 +97,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default MapSection

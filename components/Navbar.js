@@ -1,14 +1,17 @@
-import React from 'react'
-import { makeStyles, Hidden, Typography } from '@material-ui/core'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Fab from '@material-ui/core/Fab'
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
-import Zoom from '@material-ui/core/Zoom'
-import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import Box from '@mui/material/Box'
-import MobileMenu from '../components/MobileMenu'
 import Link from 'next/link'
+import {
+  makeStyles,
+  Hidden,
+  Typography,
+  AppBar,
+  Toolbar,
+  Fab,
+  Zoom,
+  useScrollTrigger,
+} from '@material-ui/core'
+import Box from '@mui/material/Box'
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
+import MobileMenu from '../components/MobileMenu'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -65,8 +68,7 @@ function ScrollTop(props) {
     </Zoom>
   )
 }
-
-export default function ButtonAppBar() {
+const Navbar = () => {
   const classes = useStyles()
 
   return (
@@ -120,3 +122,5 @@ export default function ButtonAppBar() {
     </Box>
   )
 }
+
+export default Navbar
