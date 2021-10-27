@@ -8,6 +8,7 @@ import Zoom from '@material-ui/core/Zoom'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import Box from '@mui/material/Box'
 import MobileMenu from '../components/MobileMenu'
+import Link from 'next/link'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +20,16 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(5),
     margin: 'auto',
   },
-  button: { display: 'inline-block', marginLeft: '10px', marginRight: '10px' },
+  button: {
+    display: 'inline-block',
+    marginLeft: '10px',
+    marginRight: '10px',
+    transition: '.2s',
+    '&:hover': {
+      cursor: 'pointer',
+      color: 'rgb(255,255,255,.50)',
+    },
+  },
 
   zoom: {
     position: 'fixed',
@@ -68,29 +78,29 @@ export default function ButtonAppBar() {
           </Typography>
           <Hidden smDown>
             <Box className={classes.buttonBox}>
-              <a href='/#home'>
+              <Link href='/#home'>
                 <Typography className={classes.button} variant='h4'>
                   Home
                 </Typography>
-              </a>
+              </Link>
 
-              <a href='/#avaliability'>
+              <Link href='/#avaliability'>
                 <Typography className={classes.button} variant='h4'>
                   Avaliability
                 </Typography>
-              </a>
+              </Link>
 
-              <a href='/#pricing'>
+              <Link href='/#pricing'>
                 <Typography className={classes.button} variant='h4'>
                   Pricing
                 </Typography>
-              </a>
+              </Link>
 
-              <a href='/#camps'>
+              <Link href='/#camps'>
                 <Typography className={classes.button} variant='h4'>
                   Camps
                 </Typography>
-              </a>
+              </Link>
             </Box>
           </Hidden>
           <Hidden mdUp>

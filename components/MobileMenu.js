@@ -6,6 +6,7 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
+import Link from 'next/link'
 
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
@@ -54,41 +55,41 @@ export default function SwipeableTemporaryDrawer() {
       role='presentation'
     >
       <List style={{ paddingTop: '1rem' }}>
-        <a href='/#home'>
+        <Link href='/#home'>
           <ListItem button onClick={toggleDrawer('left', false)}>
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
             <ListItemText primary='Home' />
           </ListItem>
-        </a>
+        </Link>
 
-        <a href='/#avaliability'>
+        <Link href='/#avaliability'>
           <ListItem button onClick={toggleDrawer('left', false)}>
             <ListItemIcon>
               <ScheduleIcon />
             </ListItemIcon>
             <ListItemText primary='Avaliability' />
           </ListItem>
-        </a>
+        </Link>
 
-        <a href='/#pricing'>
+        <Link href='/#pricing'>
           <ListItem button onClick={toggleDrawer('left', false)}>
             <ListItemIcon>
               <LocalOfferIcon />
             </ListItemIcon>
             <ListItemText primary='Pricing' />
           </ListItem>
-        </a>
+        </Link>
 
-        <a href='/#camps'>
+        <Link href='/#camps'>
           <ListItem button onClick={toggleDrawer('left', false)}>
             <ListItemIcon>
               <SportsBaseballIcon />
             </ListItemIcon>
             <ListItemText primary='Camps' />
           </ListItem>
-        </a>
+        </Link>
         <br />
         <Divider />
         <br />

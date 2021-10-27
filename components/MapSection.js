@@ -62,7 +62,6 @@ const AboutSection = () => {
           <iframe
             className={classes.map}
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.4707330044826!2d-87.81103538432215!3d41.71036008387303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e39b1dbfa4be7%3A0xa0e68bd3511a184d!2sFor%20the%20Love%20of%20the%20Game%20Baseball%20Academy!5e0!3m2!1sen!2sus!4v1635294170620!5m2!1sen!2sus'
-            allowfullscreen=''
             loading='lazy'
           ></iframe>
         </Grid>
